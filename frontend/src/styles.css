@@ -1,0 +1,154 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f8;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ---------------- HEADER / NAVBAR ---------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar button {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.navbar button:hover {
+  background: #145aa3;
+}
+
+.logoutBtn {
+  background: #d12e2e !important;
+}
+
+.logoutBtn:hover {
+  background: #b02020 !important;
+}
+
+/* ---------------- PRODUCT GRID ---------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* ---------------- PRODUCT CARD ---------------- */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  transition: transform 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card.product h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card .desc {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+  min-height: 40px;
+}
+
+.card .meta {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card .cat {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card button {
+  width: 100%;
+  padding: 8px 12px;
+  background: #1976d2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card button:hover {
+  background: #155a9e;
+}
+
+/* ---------------- FORMS ---------------- */
+.form {
+  max-width: 450px;
+  margin: auto;
+}
+
+.form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* ---------------- CART ---------------- */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
